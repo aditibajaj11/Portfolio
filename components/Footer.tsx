@@ -21,7 +21,7 @@ const Footer = () => {
           Ready to bring fresh <span className='text-purple'>ideas</span> to your team?
         </h1>
         <p className='text-white-200 md:mt-10 my-5 text-center'>
-          Reach out to me if you're looking for a dedicated professional ready to hit the ground running.
+          Reach out to me if you&apos;re looking for a dedicated professional ready to hit the ground running.
         </p>
         <a href='mailto:bajajaditi1122@gmail.com'>
           <MagicButton
