@@ -2,15 +2,18 @@ import React from 'react';
 import MagicButton from './ui/MagicButton';
 import { FaLocationArrow } from 'react-icons/fa';
 import { socialMedia } from '@/data';
+import Image from 'next/image'; 
 
 const Footer = () => {
   return (
     <footer className='w-full pb-10 mb-[100px]' id='contact'>
       <div className='w-full absolute left-0 -bottom-72 min-h-96'>
-        <img
+        
+        <Image
           src='/footer-grid.svg'
           alt='grid'
           className='w-full h-full opacity-50'
+          layout='fill' 
         />
       </div>
       <div className='flex flex-col items-center'>
@@ -34,10 +37,17 @@ const Footer = () => {
         </p>
         <div className='flex items-center md:gap-3 gap-6'>
           {socialMedia.map((profile) => (
-            <a key={profile.id} href={profile.link}  target='_blank' rel='noopener noreferrer'>
-            <div className='w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300'>
-              <img src={profile.img} alt={String(profile.id)} width={20} height={20} />
-            </div>
+            <a key={profile.id} href={profile.link} target='_blank' rel='noopener noreferrer'>
+              <div className='w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300'>
+               
+                <Image
+                  src={profile.img}
+                  alt={String(profile.id)}
+                  width={20}
+                  height={20}
+                  layout='fixed' 
+                />
+              </div>
             </a>
           ))}
         </div>
@@ -47,5 +57,6 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
 
