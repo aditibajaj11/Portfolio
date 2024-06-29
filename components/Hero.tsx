@@ -42,7 +42,7 @@ const Hero = () => {
           <p className='text-sm md:text-lg lg:text-xl mb-5'>
             I&apos;m a passionate Full Stack Web Developer proficient in C, C++, and Java, currently in my 4th year of engineering with a strong academic record. I secured 96.8% in my 12th grade, 97% in my 10th grade, and have maintained a good CGPA in college. Also, I bring a strong work ethic and a keen eye for detail to every project. Dedicated to continuous learning, I excel at solving complex problems and delivering high-quality, innovative solutions. Eager to make my mark in the tech industry, I am excited to contribute my skills and enthusiasm to impactful projects.
           </p>
-          <a href="/path/to/your/resume.pdf" download>
+          <a href="AditiBajaj_Resume.pdf" download>
             <MagicButton
               title="Download Resume"
               icon={<FaFileDownload />}
